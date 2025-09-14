@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #00796b;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.centered-container {
+  text-align: center;
+}
+
+.roles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.role-card {
+  border: 2px solid #00796b;
+  border-radius: 0.5rem;
+  width: 150px;
+  cursor: pointer;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+.role-card:hover,
+.role-card.selected {
+  background: #00796b;
+  color: white;
+}
+
+.role-card .icon {
+  font-size: 3rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #00796b;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #00796b;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.banner {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.wizard-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"], select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
